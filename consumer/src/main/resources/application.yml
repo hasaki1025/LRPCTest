@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+
+RPC:
+  Config:
+    SerializableType: JSON
+    HeartCheckTime: 60
+    ExpireTime: 90
+    HeartGap: 30
+    RequestTimeOut: 10000
+    ChannelType: NIO
+    LoadBalancePolicy: com.rpc.lrpc.LoadBalance.RoundRobin
+    loggingLevel: INFO
+  Server:
+    Host: 127.0.0.1
+    port: 9080
